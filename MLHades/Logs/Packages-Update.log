@@ -1,0 +1,10 @@
+
+=== Sat Jul 31 11:47:32 2021
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were added:
+  com.unity.ide.visualstudio@2.0.7
+The following packages were updated:
+  com.unity.render-pipelines.universal from version 7.6.0 to 10.3.2

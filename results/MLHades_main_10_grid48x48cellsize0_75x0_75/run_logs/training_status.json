@@ -1,0 +1,65 @@
+{
+    "MLHades": {
+        "checkpoints": [
+            {
+                "steps": 1499966,
+                "file_path": "results\\MLHades_main_10_grid48x48cellsize0_75x0_75\\MLHades\\MLHades-1499966.onnx",
+                "reward": null,
+                "creation_time": 1628212221.4323056,
+                "auxillary_file_paths": [
+                    "results\\MLHades_main_10_grid48x48cellsize0_75x0_75\\MLHades\\MLHades-1499966.pt"
+                ]
+            },
+            {
+                "steps": 1999970,
+                "file_path": "results\\MLHades_main_10_grid48x48cellsize0_75x0_75\\MLHades\\MLHades-1999970.onnx",
+                "reward": null,
+                "creation_time": 1628217989.3411074,
+                "auxillary_file_paths": [
+                    "results\\MLHades_main_10_grid48x48cellsize0_75x0_75\\MLHades\\MLHades-1999970.pt"
+                ]
+            },
+            {
+                "steps": 2499998,
+                "file_path": "results\\MLHades_main_10_grid48x48cellsize0_75x0_75\\MLHades\\MLHades-2499998.onnx",
+                "reward": 77.80039225053042,
+                "creation_time": 1628223763.3848183,
+                "auxillary_file_paths": [
+                    "results\\MLHades_main_10_grid48x48cellsize0_75x0_75\\MLHades\\MLHades-2499998.pt"
+                ]
+            },
+            {
+                "steps": 2999966,
+                "file_path": "results\\MLHades_main_10_grid48x48cellsize0_75x0_75\\MLHades\\MLHades-2999966.onnx",
+                "reward": 97.19999033585191,
+                "creation_time": 1628229530.3805642,
+                "auxillary_file_paths": [
+                    "results\\MLHades_main_10_grid48x48cellsize0_75x0_75\\MLHades\\MLHades-2999966.pt"
+                ]
+            },
+            {
+                "steps": 3000030,
+                "file_path": "results\\MLHades_main_10_grid48x48cellsize0_75x0_75\\MLHades\\MLHades-3000030.onnx",
+                "reward": 97.19999033585191,
+                "creation_time": 1628229530.9689791,
+                "auxillary_file_paths": [
+                    "results\\MLHades_main_10_grid48x48cellsize0_75x0_75\\MLHades\\MLHades-3000030.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3000030,
+            "file_path": "results\\MLHades_main_10_grid48x48cellsize0_75x0_75\\MLHades.onnx",
+            "reward": 97.19999033585191,
+            "creation_time": 1628229530.9689791,
+            "auxillary_file_paths": [
+                "results\\MLHades_main_10_grid48x48cellsize0_75x0_75\\MLHades\\MLHades-3000030.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.8.1+cu111"
+    }
+}

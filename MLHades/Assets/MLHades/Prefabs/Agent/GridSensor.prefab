@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3769585403029055744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3783505703934351510}
+  - component: {fileID: 2919948822275688260}
+  m_Layer: 0
+  m_Name: GridSensor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3783505703934351510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3769585403029055744}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2919948822275688260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3769585403029055744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a501962d056745d1a30e99146ee39fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SensorName: GridSensor
+  m_CellScale: {x: 1, y: 1, z: 1}
+  m_GridSize: {x: 32, y: 1, z: 32}
+  m_RotateWithAgent: 0
+  m_AgentGameObject: {fileID: 0}
+  m_DetectableTags:
+  - wall
+  - enemy
+  - attack
+  - trap
+  - goal
+  - reward
+  - hole
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 130564
+  m_MaxColliderBufferSize: 500
+  m_InitialColliderBufferSize: 4
+  m_DebugColors:
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 0.89019614, g: 0, b: 1, a: 0}
+  - {r: 1, g: 0.5411765, b: 0.87843144, a: 0}
+  - {r: 0, g: 1, b: 0.28235295, a: 0}
+  - {r: 0.993973, g: 1, b: 0, a: 0}
+  - {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 0}
+  m_GizmoYOffset: 5
+  m_ShowGizmos: 1
+  m_CompressionType: 1
+  m_ObservationStacks: 1

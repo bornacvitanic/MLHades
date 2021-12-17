@@ -1,0 +1,205 @@
+Mono path[0] = 'D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/Managed'
+Mono config path = 'D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/MonoBleedingEdge/etc'
+Initialize engine version: 2020.3.1f1 (77a89f25062f)
+[Subsystems] Discovering subsystems at path D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/UnitySubsystems
+Forcing GfxDevice: Null
+GfxDevice: creating device client; threaded=0
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Begin MonoManager ReloadAssembly
+- Completed reload, in  0.177 seconds
+ERROR: Shader Hidden/Universal Render Pipeline/Blit shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Hidden/Universal Render Pipeline/CopyDepth shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Hidden/Universal Render Pipeline/ScreenSpaceShadows shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Hidden/Universal Render Pipeline/Sampling shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Hidden/Universal Render Pipeline/LutBuilderLdr shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Hidden/Universal Render Pipeline/LutBuilderHdr shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Hidden/Universal Render Pipeline/UberPost shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Hidden/Universal Render Pipeline/Stop NaN shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Hidden/Universal Render Pipeline/SubpixelMorphologicalAntialiasing shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Hidden/Universal Render Pipeline/GaussianDepthOfField shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Hidden/Universal Render Pipeline/BokehDepthOfField shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Hidden/Universal Render Pipeline/CameraMotionBlur shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Hidden/Universal Render Pipeline/PaniniProjection shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Hidden/Universal Render Pipeline/Bloom shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Hidden/Universal Render Pipeline/FinalPost shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Hidden/Universal Render Pipeline/StencilDeferred shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader Sprites/Default shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+Microsoft Media Foundation video decoding to texture disabled: graphics device is Null, only Direct3D 11 and Direct3D 12 (only on desktop) are supported.
+ERROR: Shader Sprites/Mask shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Shader Graphs/RiverShaderGraph' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ERROR: Shader Shader Graphs/RiverShaderGraph shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Shader Graphs/RiverShaderGraph' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ERROR: Shader Universal Render Pipeline/Particles/Unlit shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+ERROR: Shader GUI/Text Shader shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ERROR: Shader Universal Render Pipeline/Lit shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Universal Render Pipeline/Lit' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Shader Graphs/LaserShader' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ERROR: Shader Shader Graphs/LaserShader shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Shader Graphs/LaserShader' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Shader Graphs/GlowShader' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ERROR: Shader Shader Graphs/GlowShader shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Shader Graphs/GlowShader' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ERROR: Shader Legacy Shaders/VertexLit shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Standard' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ERROR: Shader Standard shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Standard' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Shader Graphs/AxisColorShader' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ERROR: Shader Shader Graphs/AxisColorShader shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Shader Graphs/AxisColorShader' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Shader Graphs/SwordSlashShader' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ERROR: Shader Shader Graphs/SwordSlashShader shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Shader Graphs/SwordSlashShader' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Shader Graphs/CrystalShader' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ERROR: Shader Shader Graphs/CrystalShader shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Shader Graphs/CrystalShader' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Shader Graphs/ScrollingSmokeShader' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ERROR: Shader Shader Graphs/ScrollingSmokeShader shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Shader Graphs/ScrollingSmokeShader' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Shader Graphs/GradientColorShader' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ERROR: Shader Shader Graphs/GradientColorShader shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Shader Graphs/GradientColorShader' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+UnloadTime: 0.697991 ms
+Fallback handler could not load library D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/Mono/libcoreclr.so
+Fallback handler could not load library D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/Mono/libcoreclr.so.dll
+Fallback handler could not load library D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/Mono/libcoreclr.so
+Fallback handler could not load library D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/Mono/libdl.so
+Fallback handler could not load library D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/Mono/libdl.so.dll
+Fallback handler could not load library D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/Mono/libdl.so
+Fallback handler could not load library D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/Mono/libSystem.dylib
+Fallback handler could not load library D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/Mono/libSystem.dylib.dll
+Fallback handler could not load library D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/Mono/libSystem.dylib
+Fallback handler could not load library D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/Mono/libcoreclr.so
+Fallback handler could not load library D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/Mono/libcoreclr.so.dll
+Fallback handler could not load library D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/Mono/libcoreclr.so
+Fallback handler could not load library D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/Mono/libdl.so
+Fallback handler could not load library D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/Mono/libdl.so.dll
+Fallback handler could not load library D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/Mono/libdl.so
+Fallback handler could not load library D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/Mono/libSystem.dylib
+Fallback handler could not load library D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/Mono/libSystem.dylib.dll
+Fallback handler could not load library D:/Users/borna/Unity Projects/ml-agents-release_18/enviroments/MLHades/UnityEnvironment_Data/Mono/libSystem.dylib
+ERROR: Shader UI/Default shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Shader Graphs/SmokyLight' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+ERROR: Shader Shader Graphs/SmokyLight shader is not supported on this GPU (none of subshaders/fallbacks are suitable)
+WARNING: Shader Unsupported: 'Shader Graphs/SmokyLight' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+Pooled object destroyed while being placed and rotated.
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject.get_transform(UnityEngine.GameObject)
+  at ObjectPooler.Instantiate (UnityEngine.GameObject prefab, System.Nullable`1[T] position, System.Nullable`1[T] rotation) [0x0007a] in <02d5697b910348ba9adac92200d1851d>:0 
+  at EnergyProjectileAttack.OnTriggerEnter (UnityEngine.Collider other) [0x000ad] in <02d5697b910348ba9adac92200d1851d>:0 
+
+Pooled object destroyed while being placed and rotated.
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject.get_transform(UnityEngine.GameObject)
+  at ObjectPooler.Instantiate (UnityEngine.GameObject prefab, System.Nullable`1[T] position, System.Nullable`1[T] rotation) [0x0007a] in <02d5697b910348ba9adac92200d1851d>:0 
+  at EnergyProjectileAttack.OnTriggerEnter (UnityEngine.Collider other) [0x000ad] in <02d5697b910348ba9adac92200d1851d>:0 
+
+Pooled object destroyed while being placed and rotated.
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject.get_transform(UnityEngine.GameObject)
+  at ObjectPooler.Instantiate (UnityEngine.GameObject prefab, System.Nullable`1[T] position, System.Nullable`1[T] rotation) [0x0007a] in <02d5697b910348ba9adac92200d1851d>:0 
+  at ProjectileSpawner.OnEnable () [0x00035] in <02d5697b910348ba9adac92200d1851d>:0 
+
+Pooled object destroyed while being placed and rotated.
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject.get_transform(UnityEngine.GameObject)
+  at ObjectPooler.Instantiate (UnityEngine.GameObject prefab, System.Nullable`1[T] position, System.Nullable`1[T] rotation) [0x0007a] in <02d5697b910348ba9adac92200d1851d>:0 
+  at RoomController.SpawnSpawnPoint () [0x00037] in <02d5697b910348ba9adac92200d1851d>:0 
+  at RoomController.EnemyRemoved () [0x0003c] in <02d5697b910348ba9adac92200d1851d>:0 
+  at UnityEngine.Events.InvokableCall.Invoke () [0x00010] in <eaed1887017646508aa3fd7a8edf50d6>:0 
+  at UnityEngine.Events.UnityEvent.Invoke () [0x00022] in <eaed1887017646508aa3fd7a8edf50d6>:0 
+  at GameEventListener.OnEventRaised () [0x00000] in <02d5697b910348ba9adac92200d1851d>:0 
+  at GameEvent.Raise () [0x0001c] in <02d5697b910348ba9adac92200d1851d>:0 
+  at EnemyTracker.OnDeath () [0x0000e] in <02d5697b910348ba9adac92200d1851d>:0 
+  at (wrapper delegate-invoke) <Module>.invoke_void()
+  at Health.Die () [0x00000] in <02d5697b910348ba9adac92200d1851d>:0 
+  at Health.TakeDamage (System.Int32 amount) [0x0003b] in <02d5697b910348ba9adac92200d1851d>:0 
+  at MeleeWithBackstab.OnTriggerEnter (UnityEngine.Collider other) [0x00041] in <02d5697b910348ba9adac92200d1851d>:0 
+
+Pooled object destroyed while being placed and rotated.
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject.get_transform(UnityEngine.GameObject)
+  at ObjectPooler.Instantiate (UnityEngine.GameObject prefab, System.Nullable`1[T] position, System.Nullable`1[T] rotation) [0x0007a] in <02d5697b910348ba9adac92200d1851d>:0 
+  at ProjectileSpawner.OnEnable () [0x00035] in <02d5697b910348ba9adac92200d1851d>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+RangedEnemy:OnAttackEnd()
+Enemy:FixedUpdate()
+
+Pooled object destroyed while being placed and rotated.
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject.get_transform(UnityEngine.GameObject)
+  at ObjectPooler.Instantiate (UnityEngine.GameObject prefab, System.Nullable`1[T] position, System.Nullable`1[T] rotation) [0x0007a] in <02d5697b910348ba9adac92200d1851d>:0 
+  at ProjectileSpawner.OnEnable () [0x00035] in <02d5697b910348ba9adac92200d1851d>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+RangedEnemy:OnAttackEnd()
+Enemy:FixedUpdate()
+
+Pooled object destroyed while being placed and rotated.
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.GameObject.get_transform(UnityEngine.GameObject)
+  at ObjectPooler.Instantiate (UnityEngine.GameObject prefab, System.Nullable`1[T] position, System.Nullable`1[T] rotation) [0x0007a] in <02d5697b910348ba9adac92200d1851d>:0 
+  at ProjectileSpawner.OnEnable () [0x00035] in <02d5697b910348ba9adac92200d1851d>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+RangedEnemy:OnAttackEnd()
+Enemy:FixedUpdate()
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 6ea8 -> priority: 1 
+  Thread -> id: 6e50 -> priority: 1 
+  Thread -> id: 282c -> priority: 1 
+  Thread -> id: 6120 -> priority: 1 
+Waiting on threads to park on joinable thread list timed out.

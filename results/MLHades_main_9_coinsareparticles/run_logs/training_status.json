@@ -1,0 +1,65 @@
+{
+    "MLHades": {
+        "checkpoints": [
+            {
+                "steps": 1499960,
+                "file_path": "results\\MLHades_main_9_coinsareparticles\\MLHades\\MLHades-1499960.onnx",
+                "reward": 66.50019227946177,
+                "creation_time": 1628077894.232036,
+                "auxillary_file_paths": [
+                    "results\\MLHades_main_9_coinsareparticles\\MLHades\\MLHades-1499960.pt"
+                ]
+            },
+            {
+                "steps": 1999962,
+                "file_path": "results\\MLHades_main_9_coinsareparticles\\MLHades\\MLHades-1999962.onnx",
+                "reward": null,
+                "creation_time": 1628084209.9741435,
+                "auxillary_file_paths": [
+                    "results\\MLHades_main_9_coinsareparticles\\MLHades\\MLHades-1999962.pt"
+                ]
+            },
+            {
+                "steps": 2499978,
+                "file_path": "results\\MLHades_main_9_coinsareparticles\\MLHades\\MLHades-2499978.onnx",
+                "reward": 107.80029150517657,
+                "creation_time": 1628090498.463059,
+                "auxillary_file_paths": [
+                    "results\\MLHades_main_9_coinsareparticles\\MLHades\\MLHades-2499978.pt"
+                ]
+            },
+            {
+                "steps": 2999940,
+                "file_path": "results\\MLHades_main_9_coinsareparticles\\MLHades\\MLHades-2999940.onnx",
+                "reward": 71.29999168310314,
+                "creation_time": 1628096791.4954724,
+                "auxillary_file_paths": [
+                    "results\\MLHades_main_9_coinsareparticles\\MLHades\\MLHades-2999940.pt"
+                ]
+            },
+            {
+                "steps": 3000068,
+                "file_path": "results\\MLHades_main_9_coinsareparticles\\MLHades\\MLHades-3000068.onnx",
+                "reward": 71.29999168310314,
+                "creation_time": 1628096792.2813718,
+                "auxillary_file_paths": [
+                    "results\\MLHades_main_9_coinsareparticles\\MLHades\\MLHades-3000068.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3000068,
+            "file_path": "results\\MLHades_main_9_coinsareparticles\\MLHades.onnx",
+            "reward": 71.29999168310314,
+            "creation_time": 1628096792.2813718,
+            "auxillary_file_paths": [
+                "results\\MLHades_main_9_coinsareparticles\\MLHades\\MLHades-3000068.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.8.1+cu111"
+    }
+}

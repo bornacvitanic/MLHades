@@ -1,0 +1,76 @@
+[name: "version_number"
+type {
+  tensor_type {
+    elem_type: 1
+    shape {
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+, name: "memory_size"
+type {
+  tensor_type {
+    elem_type: 1
+    shape {
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+, name: "continuous_actions"
+type {
+  tensor_type {
+    elem_type: 1
+    shape {
+      dim {
+        dim_param: "batch"
+      }
+      dim {
+        dim_value: 2
+      }
+    }
+  }
+}
+, name: "continuous_action_output_shape"
+type {
+  tensor_type {
+    elem_type: 1
+    shape {
+      dim {
+        dim_value: 1
+      }
+    }
+  }
+}
+, name: "discrete_actions"
+type {
+  tensor_type {
+    elem_type: 7
+    shape {
+      dim {
+        dim_param: "batch"
+      }
+      dim {
+        dim_value: 4
+      }
+    }
+  }
+}
+, name: "discrete_action_output_shape"
+type {
+  tensor_type {
+    elem_type: 1
+    shape {
+      dim {
+        dim_value: 1
+      }
+      dim {
+        dim_value: 4
+      }
+    }
+  }
+}
+]

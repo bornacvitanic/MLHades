@@ -1,0 +1,63 @@
+[name: "obs_0"
+type {
+  tensor_type {
+    elem_type: 1
+    shape {
+      dim {
+        dim_param: "batch"
+      }
+      dim {
+        dim_value: 75
+      }
+    }
+  }
+}
+, name: "obs_1"
+type {
+  tensor_type {
+    elem_type: 1
+    shape {
+      dim {
+        dim_param: "batch"
+      }
+      dim {
+        dim_value: 7
+      }
+      dim {
+        dim_value: 64
+      }
+      dim {
+        dim_value: 64
+      }
+    }
+  }
+}
+, name: "obs_2"
+type {
+  tensor_type {
+    elem_type: 1
+    shape {
+      dim {
+        dim_param: "batch"
+      }
+      dim {
+        dim_value: 3
+      }
+    }
+  }
+}
+, name: "action_masks"
+type {
+  tensor_type {
+    elem_type: 1
+    shape {
+      dim {
+        dim_param: "batch"
+      }
+      dim {
+        dim_value: 11
+      }
+    }
+  }
+}
+]

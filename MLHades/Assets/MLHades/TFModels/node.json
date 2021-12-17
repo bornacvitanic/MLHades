@@ -1,0 +1,807 @@
+[input: "obs_1"
+input: "network_body.observation_encoder.processors.1.conv_layers.0.weight"
+input: "network_body.observation_encoder.processors.1.conv_layers.0.bias"
+output: "32"
+name: "Conv_0"
+op_type: "Conv"
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "kernel_shape"
+  ints: 8
+  ints: 8
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 4
+  ints: 4
+  type: INTS
+}
+, input: "32"
+output: "33"
+name: "LeakyRelu_1"
+op_type: "LeakyRelu"
+attribute {
+  name: "alpha"
+  f: 0.009999999776482582
+  type: FLOAT
+}
+, input: "33"
+input: "network_body.observation_encoder.processors.1.conv_layers.2.weight"
+input: "network_body.observation_encoder.processors.1.conv_layers.2.bias"
+output: "34"
+name: "Conv_2"
+op_type: "Conv"
+attribute {
+  name: "dilations"
+  ints: 1
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "group"
+  i: 1
+  type: INT
+}
+attribute {
+  name: "kernel_shape"
+  ints: 4
+  ints: 4
+  type: INTS
+}
+attribute {
+  name: "pads"
+  ints: 0
+  ints: 0
+  ints: 0
+  ints: 0
+  type: INTS
+}
+attribute {
+  name: "strides"
+  ints: 2
+  ints: 2
+  type: INTS
+}
+, input: "34"
+output: "35"
+name: "LeakyRelu_3"
+op_type: "LeakyRelu"
+attribute {
+  name: "alpha"
+  f: 0.009999999776482582
+  type: FLOAT
+}
+, output: "36"
+name: "Constant_4"
+op_type: "Constant"
+attribute {
+  name: "value"
+  t {
+    dims: 2
+    data_type: 7
+    raw_data: "\377\377\377\377\377\377\377\377\200\004\000\000\000\000\000\000"
+  }
+  type: TENSOR
+}
+, input: "35"
+input: "36"
+output: "37"
+name: "Reshape_5"
+op_type: "Reshape"
+, input: "37"
+input: "network_body.observation_encoder.processors.1.dense.0.weight"
+input: "network_body.observation_encoder.processors.1.dense.0.bias"
+output: "38"
+name: "Gemm_6"
+op_type: "Gemm"
+attribute {
+  name: "alpha"
+  f: 1.0
+  type: FLOAT
+}
+attribute {
+  name: "beta"
+  f: 1.0
+  type: FLOAT
+}
+attribute {
+  name: "transB"
+  i: 1
+  type: INT
+}
+, input: "38"
+output: "39"
+name: "LeakyRelu_7"
+op_type: "LeakyRelu"
+attribute {
+  name: "alpha"
+  f: 0.009999999776482582
+  type: FLOAT
+}
+, input: "obs_0"
+input: "39"
+input: "obs_2"
+output: "40"
+name: "Concat_8"
+op_type: "Concat"
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+, input: "40"
+input: "network_body._body_endoder.seq_layers.0.weight"
+input: "network_body._body_endoder.seq_layers.0.bias"
+output: "41"
+name: "Gemm_9"
+op_type: "Gemm"
+attribute {
+  name: "alpha"
+  f: 1.0
+  type: FLOAT
+}
+attribute {
+  name: "beta"
+  f: 1.0
+  type: FLOAT
+}
+attribute {
+  name: "transB"
+  i: 1
+  type: INT
+}
+, input: "41"
+output: "42"
+name: "Sigmoid_10"
+op_type: "Sigmoid"
+, input: "41"
+input: "42"
+output: "43"
+name: "Mul_11"
+op_type: "Mul"
+, input: "43"
+input: "network_body._body_endoder.seq_layers.2.weight"
+input: "network_body._body_endoder.seq_layers.2.bias"
+output: "44"
+name: "Gemm_12"
+op_type: "Gemm"
+attribute {
+  name: "alpha"
+  f: 1.0
+  type: FLOAT
+}
+attribute {
+  name: "beta"
+  f: 1.0
+  type: FLOAT
+}
+attribute {
+  name: "transB"
+  i: 1
+  type: INT
+}
+, input: "44"
+output: "45"
+name: "Sigmoid_13"
+op_type: "Sigmoid"
+, input: "44"
+input: "45"
+output: "46"
+name: "Mul_14"
+op_type: "Mul"
+, input: "46"
+input: "action_model._continuous_distribution.mu.weight"
+input: "action_model._continuous_distribution.mu.bias"
+output: "47"
+name: "Gemm_15"
+op_type: "Gemm"
+attribute {
+  name: "alpha"
+  f: 1.0
+  type: FLOAT
+}
+attribute {
+  name: "beta"
+  f: 1.0
+  type: FLOAT
+}
+attribute {
+  name: "transB"
+  i: 1
+  type: INT
+}
+, output: "48"
+name: "Constant_16"
+op_type: "Constant"
+attribute {
+  name: "value"
+  t {
+    data_type: 1
+    raw_data: "\000\000\000\000"
+  }
+  type: TENSOR
+}
+, input: "47"
+input: "48"
+output: "49"
+name: "Mul_17"
+op_type: "Mul"
+, input: "49"
+input: "action_model._continuous_distribution.log_sigma"
+output: "50"
+name: "Add_18"
+op_type: "Add"
+, input: "50"
+output: "51"
+name: "Exp_19"
+op_type: "Exp"
+, input: "action_masks"
+output: "52"
+name: "Slice_20"
+op_type: "Slice"
+attribute {
+  name: "axes"
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "ends"
+  ints: 3
+  type: INTS
+}
+attribute {
+  name: "starts"
+  ints: 0
+  type: INTS
+}
+, input: "action_masks"
+output: "53"
+name: "Slice_21"
+op_type: "Slice"
+attribute {
+  name: "axes"
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "ends"
+  ints: 6
+  type: INTS
+}
+attribute {
+  name: "starts"
+  ints: 3
+  type: INTS
+}
+, input: "action_masks"
+output: "54"
+name: "Slice_22"
+op_type: "Slice"
+attribute {
+  name: "axes"
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "ends"
+  ints: 9
+  type: INTS
+}
+attribute {
+  name: "starts"
+  ints: 6
+  type: INTS
+}
+, input: "action_masks"
+output: "55"
+name: "Slice_23"
+op_type: "Slice"
+attribute {
+  name: "axes"
+  ints: 1
+  type: INTS
+}
+attribute {
+  name: "ends"
+  ints: 11
+  type: INTS
+}
+attribute {
+  name: "starts"
+  ints: 9
+  type: INTS
+}
+, input: "46"
+input: "action_model._discrete_distribution.branches.0.weight"
+input: "action_model._discrete_distribution.branches.0.bias"
+output: "56"
+name: "Gemm_24"
+op_type: "Gemm"
+attribute {
+  name: "alpha"
+  f: 1.0
+  type: FLOAT
+}
+attribute {
+  name: "beta"
+  f: 1.0
+  type: FLOAT
+}
+attribute {
+  name: "transB"
+  i: 1
+  type: INT
+}
+, output: "57"
+name: "Constant_25"
+op_type: "Constant"
+attribute {
+  name: "value"
+  t {
+    data_type: 1
+    raw_data: "\000\000\200\277"
+  }
+  type: TENSOR
+}
+, input: "52"
+input: "57"
+output: "58"
+name: "Mul_26"
+op_type: "Mul"
+, output: "59"
+name: "Constant_27"
+op_type: "Constant"
+attribute {
+  name: "value"
+  t {
+    data_type: 1
+    raw_data: "\000\000\200?"
+  }
+  type: TENSOR
+}
+, input: "58"
+input: "59"
+output: "60"
+name: "Add_28"
+op_type: "Add"
+, input: "56"
+input: "52"
+output: "61"
+name: "Mul_29"
+op_type: "Mul"
+, output: "62"
+name: "Constant_30"
+op_type: "Constant"
+attribute {
+  name: "value"
+  t {
+    data_type: 1
+    raw_data: " \274\276L"
+  }
+  type: TENSOR
+}
+, input: "60"
+input: "62"
+output: "63"
+name: "Mul_31"
+op_type: "Mul"
+, input: "61"
+input: "63"
+output: "64"
+name: "Sub_32"
+op_type: "Sub"
+, input: "64"
+output: "65"
+name: "Softmax_33"
+op_type: "Softmax"
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+, input: "46"
+input: "action_model._discrete_distribution.branches.1.weight"
+input: "action_model._discrete_distribution.branches.1.bias"
+output: "66"
+name: "Gemm_34"
+op_type: "Gemm"
+attribute {
+  name: "alpha"
+  f: 1.0
+  type: FLOAT
+}
+attribute {
+  name: "beta"
+  f: 1.0
+  type: FLOAT
+}
+attribute {
+  name: "transB"
+  i: 1
+  type: INT
+}
+, output: "67"
+name: "Constant_35"
+op_type: "Constant"
+attribute {
+  name: "value"
+  t {
+    data_type: 1
+    raw_data: "\000\000\200\277"
+  }
+  type: TENSOR
+}
+, input: "53"
+input: "67"
+output: "68"
+name: "Mul_36"
+op_type: "Mul"
+, output: "69"
+name: "Constant_37"
+op_type: "Constant"
+attribute {
+  name: "value"
+  t {
+    data_type: 1
+    raw_data: "\000\000\200?"
+  }
+  type: TENSOR
+}
+, input: "68"
+input: "69"
+output: "70"
+name: "Add_38"
+op_type: "Add"
+, input: "66"
+input: "53"
+output: "71"
+name: "Mul_39"
+op_type: "Mul"
+, output: "72"
+name: "Constant_40"
+op_type: "Constant"
+attribute {
+  name: "value"
+  t {
+    data_type: 1
+    raw_data: " \274\276L"
+  }
+  type: TENSOR
+}
+, input: "70"
+input: "72"
+output: "73"
+name: "Mul_41"
+op_type: "Mul"
+, input: "71"
+input: "73"
+output: "74"
+name: "Sub_42"
+op_type: "Sub"
+, input: "74"
+output: "75"
+name: "Softmax_43"
+op_type: "Softmax"
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+, input: "46"
+input: "action_model._discrete_distribution.branches.2.weight"
+input: "action_model._discrete_distribution.branches.2.bias"
+output: "76"
+name: "Gemm_44"
+op_type: "Gemm"
+attribute {
+  name: "alpha"
+  f: 1.0
+  type: FLOAT
+}
+attribute {
+  name: "beta"
+  f: 1.0
+  type: FLOAT
+}
+attribute {
+  name: "transB"
+  i: 1
+  type: INT
+}
+, output: "77"
+name: "Constant_45"
+op_type: "Constant"
+attribute {
+  name: "value"
+  t {
+    data_type: 1
+    raw_data: "\000\000\200\277"
+  }
+  type: TENSOR
+}
+, input: "54"
+input: "77"
+output: "78"
+name: "Mul_46"
+op_type: "Mul"
+, output: "79"
+name: "Constant_47"
+op_type: "Constant"
+attribute {
+  name: "value"
+  t {
+    data_type: 1
+    raw_data: "\000\000\200?"
+  }
+  type: TENSOR
+}
+, input: "78"
+input: "79"
+output: "80"
+name: "Add_48"
+op_type: "Add"
+, input: "76"
+input: "54"
+output: "81"
+name: "Mul_49"
+op_type: "Mul"
+, output: "82"
+name: "Constant_50"
+op_type: "Constant"
+attribute {
+  name: "value"
+  t {
+    data_type: 1
+    raw_data: " \274\276L"
+  }
+  type: TENSOR
+}
+, input: "80"
+input: "82"
+output: "83"
+name: "Mul_51"
+op_type: "Mul"
+, input: "81"
+input: "83"
+output: "84"
+name: "Sub_52"
+op_type: "Sub"
+, input: "84"
+output: "85"
+name: "Softmax_53"
+op_type: "Softmax"
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+, input: "46"
+input: "action_model._discrete_distribution.branches.3.weight"
+input: "action_model._discrete_distribution.branches.3.bias"
+output: "86"
+name: "Gemm_54"
+op_type: "Gemm"
+attribute {
+  name: "alpha"
+  f: 1.0
+  type: FLOAT
+}
+attribute {
+  name: "beta"
+  f: 1.0
+  type: FLOAT
+}
+attribute {
+  name: "transB"
+  i: 1
+  type: INT
+}
+, output: "87"
+name: "Constant_55"
+op_type: "Constant"
+attribute {
+  name: "value"
+  t {
+    data_type: 1
+    raw_data: "\000\000\200\277"
+  }
+  type: TENSOR
+}
+, input: "55"
+input: "87"
+output: "88"
+name: "Mul_56"
+op_type: "Mul"
+, output: "89"
+name: "Constant_57"
+op_type: "Constant"
+attribute {
+  name: "value"
+  t {
+    data_type: 1
+    raw_data: "\000\000\200?"
+  }
+  type: TENSOR
+}
+, input: "88"
+input: "89"
+output: "90"
+name: "Add_58"
+op_type: "Add"
+, input: "86"
+input: "55"
+output: "91"
+name: "Mul_59"
+op_type: "Mul"
+, output: "92"
+name: "Constant_60"
+op_type: "Constant"
+attribute {
+  name: "value"
+  t {
+    data_type: 1
+    raw_data: " \274\276L"
+  }
+  type: TENSOR
+}
+, input: "90"
+input: "92"
+output: "93"
+name: "Mul_61"
+op_type: "Mul"
+, input: "91"
+input: "93"
+output: "94"
+name: "Sub_62"
+op_type: "Sub"
+, input: "94"
+output: "95"
+name: "Softmax_63"
+op_type: "Softmax"
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+, input: "47"
+output: "96"
+name: "RandomNormalLike_64"
+op_type: "RandomNormalLike"
+attribute {
+  name: "dtype"
+  i: 1
+  type: INT
+}
+, input: "96"
+input: "51"
+output: "97"
+name: "Mul_65"
+op_type: "Mul"
+, input: "47"
+input: "97"
+output: "98"
+name: "Add_66"
+op_type: "Add"
+, input: "98"
+output: "99"
+name: "Clip_67"
+op_type: "Clip"
+attribute {
+  name: "max"
+  f: 3.0
+  type: FLOAT
+}
+attribute {
+  name: "min"
+  f: -3.0
+  type: FLOAT
+}
+, input: "99"
+input: "112"
+output: "continuous_actions"
+name: "Div_68"
+op_type: "Div"
+, input: "65"
+output: "103"
+name: "Log_69"
+op_type: "Log"
+, input: "103"
+output: "104"
+name: "Multinomial_70"
+op_type: "Multinomial"
+attribute {
+  name: "dtype"
+  i: 7
+  type: INT
+}
+attribute {
+  name: "sample_size"
+  i: 1
+  type: INT
+}
+, input: "75"
+output: "105"
+name: "Log_71"
+op_type: "Log"
+, input: "105"
+output: "106"
+name: "Multinomial_72"
+op_type: "Multinomial"
+attribute {
+  name: "dtype"
+  i: 7
+  type: INT
+}
+attribute {
+  name: "sample_size"
+  i: 1
+  type: INT
+}
+, input: "85"
+output: "107"
+name: "Log_73"
+op_type: "Log"
+, input: "107"
+output: "108"
+name: "Multinomial_74"
+op_type: "Multinomial"
+attribute {
+  name: "dtype"
+  i: 7
+  type: INT
+}
+attribute {
+  name: "sample_size"
+  i: 1
+  type: INT
+}
+, input: "95"
+output: "109"
+name: "Log_75"
+op_type: "Log"
+, input: "109"
+output: "110"
+name: "Multinomial_76"
+op_type: "Multinomial"
+attribute {
+  name: "dtype"
+  i: 7
+  type: INT
+}
+attribute {
+  name: "sample_size"
+  i: 1
+  type: INT
+}
+, input: "104"
+input: "106"
+input: "108"
+input: "110"
+output: "discrete_actions"
+name: "Concat_77"
+op_type: "Concat"
+attribute {
+  name: "axis"
+  i: 1
+  type: INT
+}
+]
