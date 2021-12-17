@@ -1,4 +1,4 @@
-A inteligent Agent made with Unity's open-source ML-Agents project (The Unity Machine Learning Agents Toolkit) to navigate trough recreated levels and defeat enemies from the game Hades.
+A inteligent Agent made with Unity's open-source [ML-Agents](https://github.com/Unity-Technologies/ml-agents) project (The Unity Machine Learning Agents Toolkit) to navigate trough recreated levels and defeat enemies from the game Hades.
 All models were made using Blender, while shaders were made using Unity's Shader Graph.
 
 
