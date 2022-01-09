@@ -1,3 +1,7 @@
+# MLHades - MLagents agent playing Hades
+
+[![Twitter: @BCvitanic](https://img.shields.io/badge/contact-@BCvitanic-blue.svg?style=flat)](https://twitter.com/BCvitanic)
+
 A inteligent Agent made with Unity's open-source [ML-Agents](https://github.com/Unity-Technologies/ml-agents) project (The Unity Machine Learning Agents Toolkit) to navigate trough recreated levels and defeat enemies from the game Hades.
 All models were made using Blender, while shaders were made using Unity's Shader Graph.
 
